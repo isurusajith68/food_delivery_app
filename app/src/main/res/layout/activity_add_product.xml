@@ -1,0 +1,126 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Add Product"
+            android:textColor="@color/blue"
+            android:textSize="36dp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionEditText"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameEditTextproduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionEditText"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/productDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productNameEditText"
+            android:layout_marginTop="16dp"
+            android:text="Product Description"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/productDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productDescriptionLabel"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/productprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productDescriptionEditText"
+            android:layout_marginTop="16dp"
+            android:text="Product price"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/productpriceedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productprice"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/productImageLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productpriceedit"
+            android:layout_marginTop="16dp"
+            android:text="Product Image"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImageLabel"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/product_placeholder" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImageLabel"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:text="Select Image"
+           />
+
+        <Button
+            android:id="@+id/addProductButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImageView"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:text="Add Product" />
+
+        <Button
+            android:id="@+id/viewproduct_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:background="@color/blue"
+            android:text="View All Product"
+            android:onClick="onViewProductButtonClicked"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
