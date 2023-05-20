@@ -50,6 +50,7 @@ android:orientation="vertical">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save"
+        android:backgColor="@color/red"
         android:layout_below="@id/productDescriptionEditText" />
 </LinearLayout>
 </ScrollView>
